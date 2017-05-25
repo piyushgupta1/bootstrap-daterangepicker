@@ -101,7 +101,7 @@
                       '<i class="ion-md-calendar"></i>' +
                       '<div class="calendar-time">' +
                         '<div></div>' +
-                        '<i class="fa fa-clock-o glyphicon glyphicon-time"></i>' +
+                        '<i class="ion-md-time"></i>' +
                       '</div>' +
                     '</div>' +
                     '<div class="calendar-table"></div>' +
@@ -112,7 +112,7 @@
                       '<i class="ion-md-calendar"></i>' +
                       '<div class="calendar-time">' +
                         '<div></div>' +
-                        '<i class="fa fa-clock-o glyphicon glyphicon-time"></i>' +
+                        '<i class="ion-md-time></i>' +
                       '</div>' +
                     '</div>' +
                     '<div class="calendar-table"></div>' +
@@ -707,7 +707,7 @@
                 html += '<th></th>';
 
             if ((!minDate || minDate.isBefore(calendar.firstDay)) && (!this.linkedCalendars || side == 'left')) {
-                html += '<th class="prev available"><i class="fa fa-' + arrow.left + ' glyphicon glyphicon-' + arrow.left + '"></i></th>';
+                html += '<th class="prev available"><i class="ion-ios-arrow-back"></i></th>';
             } else {
                 html += '<th></th>';
             }
@@ -749,7 +749,7 @@
 
             html += '<th colspan="5" class="month">' + dateHtml + '</th>';
             if ((!maxDate || maxDate.isAfter(calendar.lastDay)) && (!this.linkedCalendars || side == 'right' || this.singleDatePicker)) {
-                html += '<th class="next available"><i class="fa fa-' + arrow.right + ' glyphicon glyphicon-' + arrow.right + '"></i></th>';
+                html += '<th class="next available"><i class="ion-ios-arrow-forward"></i></th>';
             } else {
                 html += '<th></th>';
             }
